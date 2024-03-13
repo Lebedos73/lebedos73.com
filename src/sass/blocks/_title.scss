@@ -1,0 +1,32 @@
+@use "../base/variables";
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: variables.$stroke;
+  &_fz17 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  &_fz21 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+  &_fz25 {
+    font-size: 25px;
+    line-height: 27px;
+  }
+  &_fz37 {
+    font-size: 37px;
+    line-height: 37px;
+  }
+  &_fz47 {
+    font-size: 47px;
+    line-height: 47px;
+  }
+  &_fz57 {
+    font-size: 57px;
+    line-height: 57px;
+  }
+}
