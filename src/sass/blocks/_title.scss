@@ -1,10 +1,7 @@
 @use "../base/variables";
+@use "../base/mixins";
 
 .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 36px;
-  color: variables.$stroke;
   &_fz17 {
     font-size: 17px;
     line-height: 21px;
@@ -28,5 +25,27 @@
   &_fz57 {
     font-size: 57px;
     line-height: 57px;
+  }
+  &_fw700 {
+    font-weight: 700;
+  }
+  &__section-title {
+    text-align: center;
+    position: relative;
+    color: variables.$stroke;
+    font-weight: 700;
+    @include mixins.before_circle;
+    &:before {
+      top: -3px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__section-subtitle {
+    text-align: center;
+    color: variables.$stroke;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
   }
 }

@@ -1,0 +1,56 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .promo {
+    min-height: 100vh;
+    padding-top: 100px;
+    &__title {
+      width: 200px;
+    }
+  }
+  .devider {
+    margin-top: 10px;
+  }
+  .title {
+    &__section {
+      &-title {
+        line-height: 35px;
+      }
+      &-subtitle {
+        line-height: 35px;
+        margin-top: 20px;
+      }
+    }
+    &_fz47 {
+      font-size: 24px;
+    }
+    &_fz21 {
+      font-size: 17px;
+    }
+  }
+
+  .about {
+    padding-top: 40px;
+  }
+
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 20px;
+    }
+    &__link {
+      font-size: 24px;
+    }
+  }
+
+  .contacts {
+    &__photo {
+      height: 200px;
+    }
+  }
+}

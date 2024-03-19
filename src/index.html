@@ -108,9 +108,6 @@
   <body>
     <aside class="sidepanel">
       <a href="#" class="sidepanel__link"
-        ><img src="icons/social/youtube.svg" alt="youtube" />
-      </a>
-      <a href="#" class="sidepanel__link"
         ><img src="icons/social/telegram.svg" alt="telegram" />
       </a>
       <a href="https://www.instagram.com/lebedos73/" class="sidepanel__link"
@@ -179,7 +176,7 @@
           >
           <div class="promo__btns">
             <a href="#" class="promo__link btn">Портфолио</a>
-            <a href="#" class="promo__link">Обо мне</a>
+            <a href="#" class="promo__link promo__link_white">Обо мне</a>
           </div>
         </div>
       </div>
@@ -189,7 +186,27 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="img/main_photo.jpg" alt="my photo" />
+            <!-- <img
+              srcset="
+                img/me_in_amsterdam_min.jpg 300w,
+                img/me_in_amsterdam.jpg     400w
+              "
+              sizes="(max-width: 576px) 280px,
+                      (min-width: 577px) 400px"
+              src="img/me_in_amsterdam.jpg"
+              alt="my photo"
+            /> -->
+            <picture>
+              <source
+                media="(max-width: 992px)"
+                srcset="img/me_in_amsterdam_min.jpg"
+              />
+              <source
+                media="(min-width: 993px)"
+                srcset="img/me_in_amsterdam.jpg"
+              />
+              <img src="img/me_in_amsterdam.jpg" alt="my photo" />
+            </picture>
           </div>
           <div class="about__descr">
             <h2 class="title title_fz21 about__title">Про меня</h2>
@@ -220,7 +237,7 @@
                 />
               </div>
               <div>
-                <div class="title title_fz17">Web-разработка</div>
+                <div class="title title_fz17 title_fw700">Web-разработка</div>
                 <div class="about__skills-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                   repudiandae placeat nemo, deleniti odit blanditiis
@@ -238,7 +255,9 @@
                 />
               </div>
               <div>
-                <div class="title title_fz17">Разработка приложений</div>
+                <div class="title title_fz17 title_fw700">
+                  Разработка приложений
+                </div>
                 <div class="about__skills-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                   repudiandae placeat nemo, deleniti odit blanditiis
@@ -252,7 +271,7 @@
                 <img src="icons/about_me/design.svg" alt="web_development" />
               </div>
               <div>
-                <div class="title title_fz17">UI/UX Design</div>
+                <div class="title title_fz17 title_fw700">UI/UX Design</div>
                 <div class="about__skills-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                   repudiandae placeat nemo, deleniti odit blanditiis
@@ -267,13 +286,17 @@
 
     <section class="resume">
       <div class="container">
-        <h2 class="title title_fz21 resume__title">Опыт</h2>
-        <div class="title title_fz47 resume__subtitle">Чем я буду полезен</div>
+        <h2 class="title title_fz21 title__section-title">Опыт</h2>
+        <div class="title title_fz47 title__section-subtitle">
+          Чем я буду полезен
+        </div>
         <div class="devider"></div>
 
         <div class="resume__wrapper">
           <div class="resume__column">
-            <h3 class="title title_fz25 resume__column-title">Образование</h3>
+            <h3 class="title title_fz25 resume__column-title title_fw700">
+              Образование
+            </h3>
             <ul>
               <li>
                 <div class="resume__item">
@@ -284,7 +307,9 @@
                         alt="university"
                       />
                     </div>
-                    <h4 class="title title_fz21">МГТУ им. Н. Э. Баумана</h4>
+                    <h4 class="title title_fz21 title_fw700">
+                      МГТУ им. Н. Э. Баумана
+                    </h4>
                     <div class="resume__item-location">
                       Диплом магистра (2014-2020)
                     </div>
@@ -304,7 +329,7 @@
                     <div class="resume__item-icon">
                       <img src="icons/experience/courses.svg" alt="courses" />
                     </div>
-                    <h4 class="title title_fz21">Udemy</h4>
+                    <h4 class="title title_fz21 title_fw700">Udemy</h4>
                     <div class="resume__item-location">
                       Курсы по Web-разработке
                     </div>
@@ -321,7 +346,9 @@
           </div>
 
           <div class="resume__column">
-            <h3 class="title title_fz25 resume__column-title">Опыт работы</h3>
+            <h3 class="title title_fz25 resume__column-title title_fw700">
+              Опыт работы
+            </h3>
             <ul>
               <li>
                 <div class="resume__item">
@@ -332,7 +359,9 @@
                         alt="developer"
                       />
                     </div>
-                    <h4 class="title title_fz21">Front-End Developer</h4>
+                    <h4 class="title title_fz21 title_fw700">
+                      Front-End Developer
+                    </h4>
                     <div class="resume__item-location">
                       EPAM | Москва (2018-2019)
                     </div>
@@ -352,7 +381,7 @@
                     <div class="resume__item-icon">
                       <img src="icons/experience/designer.svg" alt="designer" />
                     </div>
-                    <h4 class="title title_fz21">UI/UX Designer</h4>
+                    <h4 class="title title_fz21 title_fw700">UI/UX Designer</h4>
                     <div class="resume__item-location">
                       Squad Team | Москва (2018)
                     </div>
@@ -373,53 +402,299 @@
 
     <section class="skills">
       <div class="container">
-        <h2 class="title title_fz21 skills__title">Навыки</h2>
-        <div class="title title_fz47 skills__subtitle">
+        <h2 class="title title_fz21 title__section-title">Навыки</h2>
+        <div class="title title_fz47 title__section-subtitle">
           Что я использую в работе
         </div>
         <div class="devider"></div>
 
         <div class="skills__variants">
           <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+            <div class="skills__variants-box-img">
+              <img
+                class="skills__variants-img"
+                src="icons/skills/html5.svg"
+                alt="html5"
+              />
+            </div>
+            <h4 class="skills__variants-name">HTML5</h4>
+            <p class="skills__variants-descr">
+              Именно он создает каркас вашего сайта или приложения, а пятая
+              версия позволит мне создавать более SEO-оптимизированную структуру
+              вашего продукта
+            </p>
           </div>
 
           <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+            <div class="skills__variants-box-img">
+              <img
+                class="skills__variants-img"
+                src="icons/skills/css3.svg"
+                alt="css3"
+              />
+            </div>
+            <h4 class="skills__variants-name">CSS3</h4>
+            <p class="skills__variants-descr">
+              Этот язык стилей позволяет мне создавать абсолютно любой внешний
+              вид вашего сайта или приложения. Все ограничивается только вашей
+              фантазией!
+            </p>
           </div>
 
           <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+            <div class="skills__variants-box-img">
+              <img
+                class="skills__variants-img"
+                src="icons/skills/js.svg"
+                alt="js"
+              />
+            </div>
+            <h4 class="skills__variants-name">Java Script</h4>
+            <p class="skills__variants-descr">
+              Этот язык программирования позволяет оживить все что угодно:
+              слайдеры, окна, подсказки, вкладки, получение данных от сервера и
+              многое другое
+            </p>
           </div>
 
           <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+            <div class="skills__variants-box-img">
+              <img
+                class="skills__variants-img"
+                src="icons/skills/jquery.svg"
+                alt="jquery"
+              />
+            </div>
+            <h4 class="skills__variants-name">Jquery</h4>
+            <p class="skills__variants-descr">
+              Библиотека Jquery позволит ускорить разработку. Без необходимости
+              интегрировать в проект мы её не будем, но навык работы с ней
+              присутствует
+            </p>
+          </div>
+        </div>
+
+        <div class="skills__lines">
+          <div class="skills__lines-box">
+            <div class="skills__lines-top">
+              <div class="skills__lines-top-title">Создание сайтов</div>
+              <div class="skills__lines-top-measure">100%</div>
+            </div>
+            <div class="skills__lines-bot">
+              <div class="skills__lines-gray">
+                <div class="skills__lines-orange"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+          <div class="skills__lines-box">
+            <div class="skills__lines-top">
+              <div class="skills__lines-top-title">Работа с данными</div>
+              <div class="skills__lines-top-measure">90%</div>
+            </div>
+            <div class="skills__lines-bot">
+              <div class="skills__lines-gray">
+                <div class="skills__lines-orange"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+          <div class="skills__lines-box">
+            <div class="skills__lines-top">
+              <div class="skills__lines-top-title">Креативность</div>
+              <div class="skills__lines-top-measure">75%</div>
+            </div>
+            <div class="skills__lines-bot">
+              <div class="skills__lines-gray">
+                <div class="skills__lines-orange"></div>
+              </div>
+            </div>
           </div>
 
-          <div class="skills__variants-box">
-            <img class="skills__variants-img" src="" alt="" />
-            <h4 class="skills__variants-name"></h4>
-            <p class="skills__variants-descr"></p>
+          <div class="skills__lines-box">
+            <div class="skills__lines-top">
+              <div class="skills__lines-top-title">Создание дизайна</div>
+              <div class="skills__lines-top-measure">90%</div>
+            </div>
+            <div class="skills__lines-bot">
+              <div class="skills__lines-gray">
+                <div class="skills__lines-orange"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__lines-box">
+            <div class="skills__lines-top">
+              <div class="skills__lines-top-title">Soft skills</div>
+              <div class="skills__lines-top-measure">95%</div>
+            </div>
+            <div class="skills__lines-bot">
+              <div class="skills__lines-gray">
+                <div class="skills__lines-orange"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="title title_fz21 title__section-title">Портфолио</h2>
+        <div class="title title_fz47 title__section-subtitle">Мои работы</div>
+        <div class="devider"></div>
+
+        <div class="portfolio__wrapper">
+          <a href="#" class="portfolio__item"
+            ><img src="img/works/uber.jpg" alt="uber"
+          /></a>
+
+          <a href="https://pulse.andreilebedev.com/" class="portfolio__item"
+            ><img src="img/works/pulse.jpg" alt="pulse"
+          /></a>
+
+          <a href="#" class="portfolio__item"
+            ><img src="img/works/bread.jpg" alt="bread"
+          /></a>
+
+          <a href="#" class="portfolio__item vertical"
+            ><img src="img/works/plans.jpg" alt="plans"
+          /></a>
+
+          <a href="#" class="portfolio__item"
+            ><img src="img/works/ipad.jpg" alt="ipad"
+          /></a>
+
+          <a href="#" class="portfolio__item horizontal"
+            ><img src="img/works/light.jpeg" alt="beaconlight"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <h2 class="title title_fz21 title__section-title">Прайс-лист</h2>
+        <div class="devider"></div>
+
+        <div class="price__wrapper">
+          <div class="price__item">
+            <div class="price__item-name">Landing-page</div>
+            <div class="price__item-money">от 8000 руб.</div>
+            <div class="price__item-descr">
+              Одностраничный сайт для презентации услуг/товаров/...
+            </div>
+          </div>
+          <div class="price__item">
+            <div class="price__item-name">Корпоративный сайт</div>
+            <div class="price__item-money">от 20000 руб.</div>
+            <div class="price__item-descr">
+              Сайт для вашего бизнеса или компании
+            </div>
+          </div>
+          <div class="price__item">
+            <div class="price__item-name">Интернет-магазин</div>
+            <div class="price__item-money">от 30000 руб.</div>
+            <div class="price__item-descr">
+              Инструмент для ваших продаж в сети
+            </div>
+          </div>
+          <div class="price__item">
+            <div class="price__item-name">Дизайн</div>
+            <div class="price__item-money">Индивидуально</div>
+            <div class="price__item-descr">
+              Создам дизайн для вашего сайта/приложения...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__photo">
+            <picture>
+              <source
+                media="(max-width: 992px)"
+                srcset="img/me_contacts_min_ultra.jpg"
+              />
+              <source media="(min-width: 993px)" srcset="img/me_contacts.jpg" />
+              <img src="img/me_contacts.jpg" alt="my photo" />
+            </picture>
+          </div>
+
+          <div class="contacts__descr">
+            <h2 class="title title_fz21 about__title">Контакты</h2>
+            <div class="title title_fz47 title_fw700 about__subtitle">
+              Свяжитесь со мной
+            </div>
+            <div class="devider"></div>
+
+            <div class="title title_fz17 title_fw700 contacts__text">
+              Любым удобным для вас способом:
+            </div>
+
+            <div class="contacts__social">
+              <a href="#" class="contacts__link"
+                ><img
+                  class="contacts__img"
+                  src="icons/social/telegram.svg"
+                  alt="telegram"
+              /></a>
+              <a href="#" class="contacts__link"
+                ><img
+                  class="contacts__img"
+                  src="icons/social/square-instagram.svg"
+                  alt="instagram"
+              /></a>
+              <a href="#" class="contacts__link"
+                ><img
+                  class="contacts__img"
+                  src="icons/social/square-x-twitter.svg"
+                  alt="twitter"
+              /></a>
+              <a href="#" class="contacts__link"
+                ><img
+                  class="contacts__img"
+                  src="icons/social/linkedin.svg"
+                  alt="linkedin"
+              /></a>
+            </div>
+
+            <div class="title title_fz17 title_fw700 contacts__text">
+              Или оставьте ваши данные и я сам вам напишу:
+            </div>
+
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input required name="name" id="name" type="text" />
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="contacts__input">
+                <input required name="email" id="email" type="email" />
+                <label for="email">Ваша почта</label>
+              </div>
+
+              <div class="contacts__textarea">
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <label for="text">Ваше сообщение</label>
+              </div>
+              <div class="contacts__triggers">
+                <div>
+                  <button class="btn contacts__btn">Отправить сообщение</button>
+                </div>
+                <div class="contacts__policy">
+                  <input required type="checkbox" />
+                  <span
+                    >Я согласен(а) с
+                    <a href="/policy.html"
+                      >политикой конфиденциальности</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

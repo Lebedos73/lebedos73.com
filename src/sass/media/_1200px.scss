@@ -1,0 +1,39 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .promo {
+    min-height: 100vh;
+    padding: 130px 0 0 30px;
+  }
+  .about {
+    padding-top: 80px;
+    &__wrapper {
+      padding: 0 10px;
+      grid-template-columns: minmax(400px, auto) minmax(500px, auto);
+      grid-template-rows: minmax(245px, auto) minmax(255px, auto);
+      column-gap: 25px;
+      row-gap: 25px;
+    }
+    &__skills {
+      column-gap: 20px;
+      row-gap: 15px;
+      &-item {
+        grid-template-columns: 39px minmax(150px, auto);
+        grid-column-gap: 10px;
+      }
+      &-text {
+        font-size: 13px;
+      }
+    }
+  }
+  .portfolio {
+    padding: 0 5px 0 5px;
+  }
+}

@@ -1,0 +1,134 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .title {
+    &_fz57 {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    &_fz37 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  .promo {
+    min-height: 100vh;
+    padding-top: 100px;
+    &__link {
+      &_white {
+        color: variables.$highlight;
+      }
+    }
+  }
+
+  .about {
+    &__wrapper {
+      grid-template: auto auto auto / 1fr;
+      display: grid;
+      grid-auto-rows: minmax(245px, auto);
+      column-gap: 70px;
+      row-gap: 40px;
+    }
+    &__skills {
+      grid-template-columns: auto;
+    }
+    &__photo {
+      grid-row: 1;
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+
+  .resume {
+    margin-top: 60px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      padding: 40px 5px 0 5px;
+    }
+  }
+
+  .skills {
+    margin-top: 50px;
+    &__variants {
+      grid-template-columns: 270px;
+      grid-template-rows: 270px;
+      justify-content: center;
+      grid-auto-rows: 270px;
+      margin-top: 25px;
+    }
+    &__lines {
+      padding: 0 5px 0 5px;
+      margin-top: 50px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .portfolio {
+    margin-top: 45px;
+    &__wrapper {
+      margin-top: 40px;
+      grid-template-columns: 280px;
+      grid-template-rows: 280px;
+      justify-content: center;
+      grid-auto-rows: 280px;
+    }
+  }
+
+  .price {
+    padding-top: 45px;
+    &__wrapper {
+      padding: 20px 5px 0 5px;
+      grid-template-columns: 1fr;
+    }
+    &__item {
+      &-name {
+        font-size: 14px;
+      }
+      &-money {
+        font-size: 14px;
+      }
+      &-descr {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .contacts {
+    padding: 50px 0 120px 0;
+    &__wrapper {
+      padding: 20px 5px 0 5px;
+      grid-template-columns: 1fr;
+    }
+    &__photo {
+      height: 250px;
+    }
+    &__form {
+      grid-template: 45px 45px 190px 45px/1fr;
+    }
+    &__triggers {
+      grid-template-rows: repeat(2, 45px);
+      grid-column: 1;
+      grid-template-columns: 250px;
+      justify-items: center;
+      margin: 0 auto;
+      row-gap: 20px;
+    }
+    &__policy {
+      grid-row: 1;
+      span {
+        display: block;
+        width: 165px;
+      }
+    }
+    &__textarea {
+      grid-column: 1;
+    }
+  }
+}

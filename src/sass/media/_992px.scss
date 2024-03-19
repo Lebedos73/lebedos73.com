@@ -1,0 +1,103 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .title {
+    &_fz57 {
+      font-size: 45px;
+      line-height: 40px;
+    }
+    &_fz47 {
+      font-size: 35px;
+    }
+    &_fz37 {
+      font-size: 31px;
+    }
+    &_fz17 {
+      font-size: 16px;
+    }
+  }
+
+  .about {
+    p {
+      margin-bottom: 0;
+    }
+    &__subtitle {
+      line-height: 45px;
+    }
+    &__wrapper {
+      grid-template-columns: minmax(300px, auto) minmax(380px, auto);
+    }
+    &__text {
+      font-size: 13px;
+    }
+    &__skills {
+      grid-template-rows: 1fr;
+      grid-template-columns: none;
+      &-item {
+        grid-template-columns: 39px auto;
+      }
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+  .resume {
+    margin-top: 90px;
+    &__wrapper {
+      padding: 65px 0 0 0;
+      grid-template-columns: repeat(2, minmax(250px, 350px));
+      column-gap: 20px;
+    }
+  }
+  .skills {
+    margin-top: 90px;
+    &__variants {
+      grid-template-columns: repeat(auto-fit, 300px);
+      grid-auto-rows: 300px;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    &__lines {
+      margin-top: 90px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .portfolio {
+    margin-top: 80px;
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      justify-content: space-around;
+      gap: 20px;
+      grid-auto-rows: 280px;
+    }
+    .horizontal {
+      grid-row: unset;
+      grid-column: unset;
+    }
+    .vertical {
+      grid-row: unset;
+      grid-column: unset;
+    }
+  }
+  .price {
+    &__wrapper {
+      padding: 60px 0px 0 0px;
+      grid-template: repeat(2, minmax(35px, auto)) / repeat(
+          2,
+          minmax(330px, auto)
+        );
+      column-gap: 20px;
+    }
+  }
+  .contacts {
+    padding-top: 70px;
+    &__wrapper {
+      grid-template-columns: auto;
+      row-gap: 40px;
+    }
+  }
+}

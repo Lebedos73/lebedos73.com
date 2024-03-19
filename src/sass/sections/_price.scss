@@ -1,0 +1,52 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.price {
+  padding-top: 60px;
+  &__wrapper {
+    padding: 60px 50px 0 50px;
+    display: grid;
+    grid-template: repeat(2, minmax(35px, auto)) / repeat(
+        2,
+        minmax(400px, auto)
+      );
+    grid-auto-rows: 40px;
+    justify-content: space-between;
+    align-content: space-between;
+    row-gap: 20px;
+  }
+  &__item {
+    position: relative;
+    display: grid;
+    padding-left: 30px;
+    grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
+    justify-content: space-between;
+    align-content: space-between;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: variables.$highlight;
+      border-radius: 100%;
+    }
+    &-name {
+      color: variables.$stroke;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    &-money {
+      justify-self: end;
+      grid-column: 2;
+      color: variables.$stroke;
+      font-size: 19px;
+      font-weight: 700;
+    }
+    &-descr {
+      grid-column: 1 / 3;
+      color: variables.$stroke;
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+}

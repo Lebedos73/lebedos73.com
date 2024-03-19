@@ -9,3 +9,10 @@ hamburger.addEventListener('click', () => {
 closeElem.addEventListener('click', () => {
   menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.skills__lines-top-measure'),
+  lines = document.querySelectorAll('.skills__lines-orange');
+
+counters.forEach((item, i) => {
+  lines[i].style.width = item.innerHTML;
+});

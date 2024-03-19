@@ -1,0 +1,16 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.devider {
+  margin-top: 25px;
+  background-color: variables.$highlight;
+  width: 60px;
+  height: 3px;
+  margin: 25px auto 0 auto;
+}
