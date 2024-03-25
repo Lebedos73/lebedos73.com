@@ -39,10 +39,10 @@
     justify-content: space-between;
     row-gap: 29px;
     label {
-      padding: 0 10px;
+      padding: 0 5px;
       position: absolute;
       top: -12px;
-      left: 10px;
+      left: 7px;
       background-color: white;
     }
   }
@@ -90,5 +90,12 @@
     color: variables.$stroke;
     font-size: 15px;
     font-weight: 700;
+  }
+  .error {
+    z-index: 3;
+  }
+  input.error,
+  textarea.error {
+    border: 1px solid red;
   }
 }

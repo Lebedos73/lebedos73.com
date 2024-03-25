@@ -1,0 +1,50 @@
+@use "../base/variables";
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 260px;
+  background: url("../img/jump.jpg") no-repeat center / cover;
+  border-radius: 5px;
+  &__descr {
+    position: absolute;
+    top: -55px;
+    text-align: center;
+    color: variables.$highlight;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__feedback {
+    color: variables.$main;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  &__close {
+    position: absolute;
+    right: -30px;
+    top: -100px;
+    color: variables.$highlight;
+    font-size: 40px;
+    font-weight: 700;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+#thanks {
+  display: none;
+}

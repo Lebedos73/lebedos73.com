@@ -666,9 +666,15 @@
               Или оставьте ваши данные и я сам вам напишу:
             </div>
 
-            <form action="#" class="contacts__form">
+            <form action="#" id="form" class="contacts__form">
               <div class="contacts__input">
-                <input required name="name" id="name" type="text" />
+                <input
+                  required
+                  minlength="2"
+                  name="name"
+                  id="name"
+                  type="text"
+                />
                 <label for="name">Ваше имя</label>
               </div>
               <div class="contacts__input">
@@ -677,15 +683,24 @@
               </div>
 
               <div class="contacts__textarea">
-                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <textarea
+                  required
+                  minlength="5"
+                  name="textarea"
+                  id="text"
+                  cols="30"
+                  rows="10"
+                ></textarea>
                 <label for="text">Ваше сообщение</label>
               </div>
               <div class="contacts__triggers">
                 <div>
-                  <button class="btn contacts__btn">Отправить сообщение</button>
+                  <button type="submit" class="btn contacts__btn">
+                    Отправить сообщение
+                  </button>
                 </div>
                 <div class="contacts__policy">
-                  <input required type="checkbox" />
+                  <input required name="checkbox" id="agree" type="checkbox" />
                   <span
                     >Я согласен(а) с
                     <a href="/policy.html"
@@ -700,6 +715,20 @@
       </div>
     </section>
 
+    <div class="overlay">
+      <div class="modal" id="thanks">
+        <div class="modal__close">&times;</div>
+        <div class="modal__descr">
+          Спасибо за сообщение! <br />
+          <span class="modal__feedback"
+            >Я свяжусь с тобой в самое ближайшее время.</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
