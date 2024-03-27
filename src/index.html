@@ -106,7 +106,7 @@
   </head>
 
   <body>
-    <aside class="sidepanel">
+    <!-- <aside class="sidepanel">
       <a href="#" class="sidepanel__link"
         ><img src="icons/social/telegram.svg" alt="telegram" />
       </a>
@@ -124,7 +124,7 @@
       </a>
       <div class="sidepanel__devider"></div>
       <div class="sidepanel__text"><span>Социальные сети</span></div>
-    </aside>
+    </aside> -->
 
     <div class="menu">
       <div class="menu__block">
@@ -134,21 +134,28 @@
 
         <nav>
           <ul class="menu__list">
-            <li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-            <li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-            <li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-            <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-            <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-            <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+            <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
+            <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
+            <li class="menu__link"><a href="#skills">МОИ НАВЫКИ</a></li>
+            <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+            <li class="menu__link"><a href="#price">ПРАЙС-ЛИСТ</a></li>
+            <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
           </ul>
         </nav>
 
         <div class="menu__social">
-          <a href="#"><img src="icons/social/github.svg" alt="github" /></a
-          ><a href="#"
+          <a href="https://github.com/Lebedos73"
+            ><img src="icons/social/github.svg" alt="github" /></a
+          ><a href="https://www.instagram.com/lebedos73/"
             ><img src="icons/social/instagram.svg" alt="instagram" /></a
-          ><a href="#"
+          ><a href="https://t.me/Lebedos73"
             ><img src="icons/social/telegram.svg" alt="telegram"
+          /></a>
+          <a href="https://twitter.com/lebedos73"
+            ><img src="icons/social/square-x-twitter.svg" alt="twitter"
+          /></a>
+          <a href="https://www.linkedin.com/in/andrei-lebedev-90b850234"
+            ><img src="icons/social/linkedin.svg" alt="linkedin"
           /></a>
         </div>
       </div>
@@ -157,10 +164,12 @@
     </div>
 
     <section class="promo">
-      <div class="hamburger">
-        <span class="hamburger__span"></span>
-        <span class="hamburger__span hamburger__span_long"> </span>
-        <span class="hamburger__span"></span>
+      <div class="roundHumburger">
+        <div class="hamburger">
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span hamburger__span_long"> </span>
+          <span class="hamburger__span"></span>
+        </div>
       </div>
 
       <div class="container">
@@ -175,27 +184,17 @@
             в поисках дома</span
           >
           <div class="promo__btns">
-            <a href="#" class="promo__link btn">Портфолио</a>
-            <a href="#" class="promo__link promo__link_white">Обо мне</a>
+            <a href="#portfolio" class="promo__link btn">Портфолио</a>
+            <a href="#about" class="promo__link promo__link_white">Обо мне</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <!-- <img
-              srcset="
-                img/me_in_amsterdam_min.jpg 300w,
-                img/me_in_amsterdam.jpg     400w
-              "
-              sizes="(max-width: 576px) 280px,
-                      (min-width: 577px) 400px"
-              src="img/me_in_amsterdam.jpg"
-              alt="my photo"
-            /> -->
             <picture>
               <source
                 media="(max-width: 992px)"
@@ -217,14 +216,13 @@
 
             <div class="devider"></div>
             <p class="about__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In sunt
-              eum odio necessitatibus, quibusdam suscipit tempore nihil
-              eligendi, error quo aperiam. Ut quam quisquam esse exercitationem
-              cum, ex libero odio. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Tempora deserunt qui minima, iure magnam
-              asperiores distinctio provident cumque blanditiis harum error
-              ipsam autem adipisci necessitatibus laboriosam sunt modi
-              doloremque. Suscipit.
+              Как вы уже поняли меня зовут Андрей и если вкратце ,то я являюсь
+              веб разработчиком покинувшим свою страну в целях завести новые
+              знакомства, поработать с интересными людьми, найти свой новый дом
+              (уже есть пара идей где он может быть) и увидеть мир. <br />
+              Я открыт для различных предложений, сотрудничества и работы,
+              помогу тебе решить возникшие задачи, сделаю это в максимально
+              лучшей форме на которую способен и в обговоренные сроки.
             </p>
           </div>
 
@@ -239,9 +237,8 @@
               <div>
                 <div class="title title_fz17 title_fw700">Web-разработка</div>
                 <div class="about__skills-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  repudiandae placeat nemo, deleniti odit blanditiis
-                  exercitationem eaque sequi architecto quod ullam quos!
+                  Напишу веб сайт с использованием современных технологий
+                  вёрстки и высокими показателями pagespeed.
                 </div>
               </div>
             </div>
@@ -255,13 +252,10 @@
                 />
               </div>
               <div>
-                <div class="title title_fz17 title_fw700">
-                  Разработка приложений
-                </div>
+                <div class="title title_fz17 title_fw700">Hosting/Domain</div>
                 <div class="about__skills-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  repudiandae placeat nemo, deleniti odit blanditiis
-                  exercitationem eaque sequi architecto quod ullam quos!
+                  Если у вас нет пока что своего имени для сайта и места в сети
+                  где он будет находится, я легко вам помогу в данном вопросе.
                 </div>
               </div>
             </div>
@@ -273,18 +267,31 @@
               <div>
                 <div class="title title_fz17 title_fw700">UI/UX Design</div>
                 <div class="about__skills-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  repudiandae placeat nemo, deleniti odit blanditiis
-                  exercitationem eaque sequi architecto quod ullam quos!
+                  Учтя все ваши пожелания и просьбы разработаю интересный и
+                  функциональный дизайн сайта, которым будет легко и приятно
+                  пользоваться.
                 </div>
               </div>
             </div>
+
+            <!-- <div class="about__skills-item">
+              <div class="about__skills-circle">
+                <img src="icons/about_me/design.svg" alt="web_development" />
+              </div>
+              <div>
+                <div class="title title_fz17 title_fw700">WordPress</div>
+                <div class="about__skills-text">
+                  Посажу вёрстку на самую популярную CMS в мире где вы сами
+                  сможете настраивать и добавлять информацию на свой сайт.
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
 
-    <section class="resume">
+    <section class="resume" id="resume">
       <div class="container">
         <h2 class="title title_fz21 title__section-title">Опыт</h2>
         <div class="title title_fz47 title__section-subtitle">
@@ -307,18 +314,15 @@
                         alt="university"
                       />
                     </div>
-                    <h4 class="title title_fz21 title_fw700">
-                      МГТУ им. Н. Э. Баумана
-                    </h4>
+                    <h4 class="title title_fz21 title_fw700">Web-developer</h4>
                     <div class="resume__item-location">
-                      Диплом магистра (2014-2020)
+                      Udemi (Ivan Petrichenko 2024)
                     </div>
                   </div>
                   <div class="resume__item-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam, fugit aliquam ea quae quas laborum dolore tempora
-                    perspiciatis minus fuga, repellendus voluptas sed ab
-                    deleniti nihil libero unde? Minima, enim!
+                    Адаптивная верстка сайтов с использованием препроцессоров
+                    sass/scss, Gulp, Js, Jquery, с учетом SEO оптимизации и
+                    поисковых алгоритмов Google.
                   </div>
                 </div>
               </li>
@@ -329,17 +333,12 @@
                     <div class="resume__item-icon">
                       <img src="icons/experience/courses.svg" alt="courses" />
                     </div>
-                    <h4 class="title title_fz21 title_fw700">Udemy</h4>
+                    <h4 class="title title_fz21 title_fw700">UI/UX design</h4>
                     <div class="resume__item-location">
-                      Курсы по Web-разработке
+                      Udemi (Dmitrii Fokeev 2024)
                     </div>
                   </div>
-                  <div class="resume__item-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam, fugit aliquam ea quae quas laborum dolore tempora
-                    perspiciatis minus fuga, repellendus voluptas sed ab
-                    deleniti nihil libero unde? Minima, enim!
-                  </div>
+                  <div class="resume__item-body">In progress...</div>
                 </div>
               </li>
             </ul>
@@ -360,22 +359,15 @@
                       />
                     </div>
                     <h4 class="title title_fz21 title_fw700">
-                      Front-End Developer
+                      Freelance Front-End Developer
                     </h4>
-                    <div class="resume__item-location">
-                      EPAM | Москва (2018-2019)
-                    </div>
+                    <div class="resume__item-location"></div>
                   </div>
-                  <div class="resume__item-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam, fugit aliquam ea quae quas laborum dolore tempora
-                    perspiciatis minus fuga, repellendus voluptas sed ab
-                    deleniti nihil libero unde? Minima, enim!
-                  </div>
+                  <div class="resume__item-body">Worldwide work since 2024</div>
                 </div>
               </li>
 
-              <li>
+              <!-- <li>
                 <div class="resume__item">
                   <div class="resume__item-head">
                     <div class="resume__item-icon">
@@ -393,14 +385,14 @@
                     deleniti nihil libero unde? Minima, enim!
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="container">
         <h2 class="title title_fz21 title__section-title">Навыки</h2>
         <div class="title title_fz47 title__section-subtitle">
@@ -538,41 +530,25 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="title title_fz21 title__section-title">Портфолио</h2>
         <div class="title title_fz47 title__section-subtitle">Мои работы</div>
         <div class="devider"></div>
 
         <div class="portfolio__wrapper">
-          <a href="#" class="portfolio__item"
-            ><img src="img/works/uber.jpg" alt="uber"
-          /></a>
-
           <a href="https://pulse.andreilebedev.com/" class="portfolio__item"
             ><img src="img/works/pulse.jpg" alt="pulse"
           /></a>
 
-          <a href="#" class="portfolio__item"
-            ><img src="img/works/bread.jpg" alt="bread"
-          /></a>
-
-          <a href="#" class="portfolio__item vertical"
-            ><img src="img/works/plans.jpg" alt="plans"
-          /></a>
-
-          <a href="#" class="portfolio__item"
-            ><img src="img/works/ipad.jpg" alt="ipad"
-          /></a>
-
-          <a href="#" class="portfolio__item horizontal"
-            ><img src="img/works/light.jpeg" alt="beaconlight"
+          <a href="https://andreilebedev.com/" class="portfolio__item"
+            ><img src="img/works/my_site.jpg" alt="my site"
           /></a>
         </div>
       </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
       <div class="container">
         <h2 class="title title_fz21 title__section-title">Прайс-лист</h2>
         <div class="devider"></div>
@@ -610,7 +586,7 @@
       </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
@@ -636,25 +612,35 @@
             </div>
 
             <div class="contacts__social">
-              <a href="#" class="contacts__link"
+              <a href="https://github.com/Lebedos73" class="contacts__link"
+                ><img
+                  class="contacts__img"
+                  src="icons/social/github.svg"
+                  alt="github"
+              /></a>
+              <a href="https://t.me/Lebedos73" class="contacts__link"
                 ><img
                   class="contacts__img"
                   src="icons/social/telegram.svg"
                   alt="telegram"
               /></a>
-              <a href="#" class="contacts__link"
+              <a
+                href="https://www.instagram.com/lebedos73/"
+                class="contacts__link"
                 ><img
                   class="contacts__img"
                   src="icons/social/square-instagram.svg"
                   alt="instagram"
               /></a>
-              <a href="#" class="contacts__link"
+              <a href="https://twitter.com/lebedos73" class="contacts__link"
                 ><img
                   class="contacts__img"
                   src="icons/social/square-x-twitter.svg"
                   alt="twitter"
               /></a>
-              <a href="#" class="contacts__link"
+              <a
+                href="https://www.linkedin.com/in/andrei-lebedev-90b850234"
+                class="contacts__link"
                 ><img
                   class="contacts__img"
                   src="icons/social/linkedin.svg"

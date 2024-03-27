@@ -16,11 +16,12 @@
     }
   }
   .promo {
+    background-position: 35%;
     min-height: 100vh;
-    padding-top: 100px;
+    padding: 100px 0 0px 0px;
     &__link {
       &_white {
-        color: variables.$highlight;
+        color: variables.$stroke;
       }
     }
   }

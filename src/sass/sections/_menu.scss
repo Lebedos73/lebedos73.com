@@ -1,14 +1,26 @@
 @use "../base/variables";
 
+.roundHumburger {
+  position: fixed;
+  top: 16px;
+  right: 21px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 100%;
+  z-index: 9;
+}
+
 .hamburger {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 30px;
   right: 30px;
   display: flex;
   height: 21px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  z-index: 10;
   cursor: pointer;
   &__span {
     display: block;
@@ -85,7 +97,7 @@
     }
   }
   &__social {
-    width: 90px;
+    width: 200px;
     position: absolute;
     bottom: 50px;
     display: flex;
@@ -94,8 +106,8 @@
     transform: translateX(-50%);
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
       display: block;
     }
   }

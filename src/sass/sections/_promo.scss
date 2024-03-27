@@ -2,10 +2,11 @@
 @use "../base/mixins";
 
 .promo {
-  min-height: 60vh;
+  min-height: 40vh;
   position: relative;
-  background: url(../img/main_me.jpg) no-repeat 50% / cover;
-  padding-top: 205px;
+  background: url(../img/main_me.jpg) no-repeat 35% / cover;
+  padding: 80px 0 150px 120px;
+
   &__title {
     margin-top: 10px;
   }
