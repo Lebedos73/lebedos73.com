@@ -1,0 +1,16 @@
+@use "../base/variables";
+
+@media (orientation: landscape) {
+  .menu {
+    &__block {
+      padding-top: 60px;
+    }
+    &__link {
+      margin-bottom: 15px;
+      line-height: 30px;
+    }
+    &__social {
+      bottom: 25px;
+    }
+  }
+}
